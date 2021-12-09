@@ -1,0 +1,1206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="apple-touch-icon" sizes="76x76" href="../img/apple-icon.png">
+  <link rel="icon" type="image/png" href="../img/cryptolux.png">
+  <title>კრიპტოლუქსი - მთავარი გვერდი</title>
+  <!-- Fonts and icons -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
+  <!-- Nucleo Icons -->
+  <link href="../css/nucleo-icons.css" rel="stylesheet" />
+  <link href="../css/nucleo-svg.css" rel="stylesheet" />
+  <!-- Font Awesome Icons -->
+  <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
+  <link href="../css/nucleo-svg.css" rel="stylesheet" />
+  <!-- CSS Files -->
+  <link id="pagestyle" href="../css/soft-ui-dashboard.css?v=1.0.3" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+  <script src="https://unpkg.com/moralis/dist/moralis.js"></script>
+</head>
+
+<body class="g-sidenav-show  bg-gray-100">
+  <aside class="sidenav navbar navbar-vertical navbar-expand-xs border-0 border-radius-xl my-3 fixed-start ms-3 "
+    id="sidenav-main">
+    <div class="sidenav-header">
+      <i class="fas fa-times p-3 cursor-pointer text-secondary opacity-5 position-absolute end-0 top-0 d-none d-xl-none"
+        aria-hidden="true" id="iconSidenav"></i>
+      <a class="navbar-brand m-0" href="#" target="_blank">
+        <img src="../img/cryptolux.png" class="navbar-brand-img h-100" alt="main_logo">
+        <span class="ms-1 font-weight-bold">CryptoLux (BETA)</span>
+      </a>
+    </div>
+    <a id="connectedChainPrice" class="col d-flex justify-content-center mb-3">
+
+    </a>
+    <hr class="horizontal dark mt-0">
+    <div class="collapse navbar-collapse  w-auto  max-height-vh-100 h-100" id="sidenav-collapse-main">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link  active" href="../index.html">
+            <div
+              class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center">
+              <svg width="12px" height="12px" viewBox="0 0 45 40" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink">
+                <title>shop </title>
+                <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                  <g transform="translate(-1716.000000, -439.000000)" fill="#FFFFFF" fill-rule="nonzero">
+                    <g transform="translate(1716.000000, 291.000000)">
+                      <g transform="translate(0.000000, 148.000000)">
+                        <path class="color-background opacity-6"
+                          d="M46.7199583,10.7414583 L40.8449583,0.949791667 C40.4909749,0.360605034 39.8540131,0 39.1666667,0 L7.83333333,0 C7.1459869,0 6.50902508,0.360605034 6.15504167,0.949791667 L0.280041667,10.7414583 C0.0969176761,11.0460037 -1.23209662e-05,11.3946378 -1.23209662e-05,11.75 C-0.00758042603,16.0663731 3.48367543,19.5725301 7.80004167,19.5833333 L7.81570833,19.5833333 C9.75003686,19.5882688 11.6168794,18.8726691 13.0522917,17.5760417 C16.0171492,20.2556967 20.5292675,20.2556967 23.494125,17.5760417 C26.4604562,20.2616016 30.9794188,20.2616016 33.94575,17.5760417 C36.2421905,19.6477597 39.5441143,20.1708521 42.3684437,18.9103691 C45.1927731,17.649886 47.0084685,14.8428276 47.0000295,11.75 C47.0000295,11.3946378 46.9030823,11.0460037 46.7199583,10.7414583 Z">
+                        </path>
+                        <path class="color-background"
+                          d="M39.198,22.4912623 C37.3776246,22.4928106 35.5817531,22.0149171 33.951625,21.0951667 L33.92225,21.1107282 C31.1430221,22.6838032 27.9255001,22.9318916 24.9844167,21.7998837 C24.4750389,21.605469 23.9777983,21.3722567 23.4960833,21.1018359 L23.4745417,21.1129513 C20.6961809,22.6871153 17.4786145,22.9344611 14.5386667,21.7998837 C14.029926,21.6054643 13.533337,21.3722507 13.0522917,21.1018359 C11.4250962,22.0190609 9.63246555,22.4947009 7.81570833,22.4912623 C7.16510551,22.4842162 6.51607673,22.4173045 5.875,22.2911849 L5.875,44.7220845 C5.875,45.9498589 6.7517757,46.9451667 7.83333333,46.9451667 L19.5833333,46.9451667 L19.5833333,33.6066734 L27.4166667,33.6066734 L27.4166667,46.9451667 L39.1666667,46.9451667 C40.2482243,46.9451667 41.125,45.9498589 41.125,44.7220845 L41.125,22.2822926 C40.4887822,22.4116582 39.8442868,22.4815492 39.198,22.4912623 Z">
+                        </path>
+                      </g>
+                    </g>
+                  </g>
+                </g>
+              </svg>
+            </div>
+            <span class="nav-link-text ms-1">მთავარი</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link  " href="../profile.html">
+            <div
+              class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#344767" class="bi bi-person-circle"
+                viewBox="0 0 16 16">
+                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+                <path fill-rule="evenodd"
+                  d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
+              </svg>
+            </div>
+            <span class="nav-link-text ms-1">ჩემი გვერდი</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link  " href="../portfolio.html">
+            <div
+              class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#344767" class="bi bi-wallet-fill"
+                viewBox="0 0 16 16">
+                <path
+                  d="M1.5 2A1.5 1.5 0 0 0 0 3.5v2h6a.5.5 0 0 1 .5.5c0 .253.08.644.306.958.207.288.557.542 1.194.542.637 0 .987-.254 1.194-.542.226-.314.306-.705.306-.958a.5.5 0 0 1 .5-.5h6v-2A1.5 1.5 0 0 0 14.5 2h-13z" />
+                <path
+                  d="M16 6.5h-5.551a2.678 2.678 0 0 1-.443 1.042C9.613 8.088 8.963 8.5 8 8.5c-.963 0-1.613-.412-2.006-.958A2.679 2.679 0 0 1 5.551 6.5H0v6A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-6z" />
+              </svg>
+            </div>
+            <span class="nav-link-text ms-1">პორტფოლიო</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link  " href="../nft.html">
+            <div
+              class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#344767" class="bi bi-palette-fill"
+                viewBox="0 0 16 16">
+                <path
+                  d="M12.433 10.07C14.133 10.585 16 11.15 16 8a8 8 0 1 0-8 8c1.996 0 1.826-1.504 1.649-3.08-.124-1.101-.252-2.237.351-2.92.465-.527 1.42-.237 2.433.07zM8 5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm4.5 3a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zM5 6.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm.5 6.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z" />
+              </svg>
+            </div>
+            <span class="nav-link-text ms-1">NFT</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link  " href="../staking.html">
+            <div
+              class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#344767"
+                class="bi bi-piggy-bank-fill" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M7.964 1.527c-2.977 0-5.571 1.704-6.32 4.125h-.55A1 1 0 0 0 .11 6.824l.254 1.46a1.5 1.5 0 0 0 1.478 1.243h.263c.3.513.688.978 1.145 1.382l-.729 2.477a.5.5 0 0 0 .48.641h2a.5.5 0 0 0 .471-.332l.482-1.351c.635.173 1.31.267 2.011.267.707 0 1.388-.095 2.028-.272l.543 1.372a.5.5 0 0 0 .465.316h2a.5.5 0 0 0 .478-.645l-.761-2.506C13.81 9.895 14.5 8.559 14.5 7.069c0-.145-.007-.29-.02-.431.261-.11.508-.266.705-.444.315.306.815.306.815-.417 0 .223-.5.223-.461-.026a.95.95 0 0 0 .09-.255.7.7 0 0 0-.202-.645.58.58 0 0 0-.707-.098.735.735 0 0 0-.375.562c-.024.243.082.48.32.654a2.112 2.112 0 0 1-.259.153c-.534-2.664-3.284-4.595-6.442-4.595zm7.173 3.876a.565.565 0 0 1-.098.21.704.704 0 0 1-.044-.025c-.146-.09-.157-.175-.152-.223a.236.236 0 0 1 .117-.173c.049-.027.08-.021.113.012a.202.202 0 0 1 .064.199zm-8.999-.65A6.613 6.613 0 0 1 7.964 4.5c.666 0 1.303.097 1.893.273a.5.5 0 1 0 .286-.958A7.601 7.601 0 0 0 7.964 3.5c-.734 0-1.441.103-2.102.292a.5.5 0 1 0 .276.962zM5 6.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0z" />
+              </svg>
+            </div>
+            <span class="nav-link-text ms-1">Staking</span>
+          </a>
+        </li>
+        <li class="nav-item mt-3">
+          <h6 class="ps-4 ms-2 text-uppercase text-xs font-weight-bolder opacity-6">სხვა</h6>
+        </li>
+        <li class="nav-item">
+        <li class="nav-item">
+          <a data-bs-toggle="collapse" href="#cryptos" class="nav-link collapsed" aria-controls="cryptos" role="button"
+            aria-expanded="false">
+            <div
+              class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center d-flex align-items-center justify-content-center  me-2">
+              <svg width="12px" height="12px" viewBox="0 0 45 40" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink">
+                <title>shop </title>
+                <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                  <g transform="translate(-1716.000000, -439.000000)" fill="#FFFFFF" fill-rule="nonzero">
+                    <g transform="translate(1716.000000, 291.000000)">
+                      <g transform="translate(0.000000, 148.000000)">
+                        <path class="color-background"
+                          d="M46.7199583,10.7414583 L40.8449583,0.949791667 C40.4909749,0.360605034 39.8540131,0 39.1666667,0 L7.83333333,0 C7.1459869,0 6.50902508,0.360605034 6.15504167,0.949791667 L0.280041667,10.7414583 C0.0969176761,11.0460037 -1.23209662e-05,11.3946378 -1.23209662e-05,11.75 C-0.00758042603,16.0663731 3.48367543,19.5725301 7.80004167,19.5833333 L7.81570833,19.5833333 C9.75003686,19.5882688 11.6168794,18.8726691 13.0522917,17.5760417 C16.0171492,20.2556967 20.5292675,20.2556967 23.494125,17.5760417 C26.4604562,20.2616016 30.9794188,20.2616016 33.94575,17.5760417 C36.2421905,19.6477597 39.5441143,20.1708521 42.3684437,18.9103691 C45.1927731,17.649886 47.0084685,14.8428276 47.0000295,11.75 C47.0000295,11.3946378 46.9030823,11.0460037 46.7199583,10.7414583 Z"
+                          opacity="0.598981585"></path>
+                        <path class="color-background"
+                          d="M39.198,22.4912623 C37.3776246,22.4928106 35.5817531,22.0149171 33.951625,21.0951667 L33.92225,21.1107282 C31.1430221,22.6838032 27.9255001,22.9318916 24.9844167,21.7998837 C24.4750389,21.605469 23.9777983,21.3722567 23.4960833,21.1018359 L23.4745417,21.1129513 C20.6961809,22.6871153 17.4786145,22.9344611 14.5386667,21.7998837 C14.029926,21.6054643 13.533337,21.3722507 13.0522917,21.1018359 C11.4250962,22.0190609 9.63246555,22.4947009 7.81570833,22.4912623 C7.16510551,22.4842162 6.51607673,22.4173045 5.875,22.2911849 L5.875,44.7220845 C5.875,45.9498589 6.7517757,46.9451667 7.83333333,46.9451667 L19.5833333,46.9451667 L19.5833333,33.6066734 L27.4166667,33.6066734 L27.4166667,46.9451667 L39.1666667,46.9451667 C40.2482243,46.9451667 41.125,45.9498589 41.125,44.7220845 L41.125,22.2822926 C40.4887822,22.4116582 39.8442868,22.4815492 39.198,22.4912623 Z">
+                        </path>
+                      </g>
+                    </g>
+                  </g>
+                </g>
+              </svg>
+            </div>
+            <span class="nav-link-text ms-1">კრიპტოვალუტები</span>
+          </a>
+          <div class="collapse" id="cryptos">
+            <ul class="nav ms-4 ps-3">
+              <li class="nav-item ">
+                <a class="nav-link " href="../topcrypto.html">
+                  <span class="sidenav-mini-icon"> T </span>
+                  <span class="sidenav-normal"> TOP 100 კრიპტო </span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../cryptoCategories/binancelp.html">
+                  <span class="sidenav-mini-icon"> A </span>
+                  <span class="sidenav-normal"> Binance Launchpool </span>
+                </a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link " href="../cryptoCategories/cextokens.html">
+                  <span class="sidenav-mini-icon"> C </span>
+                  <span class="sidenav-normal"> CEX ტოკენები </span>
+                </a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link " href="../cryptoCategories/dextokens.html">
+                  <span class="sidenav-mini-icon"> D </span>
+                  <span class="sidenav-normal"> DEX ტოკენები </span>
+                </a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link " href="../cryptoCategories/metaverse.html">
+                  <span class="sidenav-mini-icon"> M </span>
+                  <span class="sidenav-normal"> Metaverse </span>
+                </a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link " href="../cryptoCategories/p2eeco.html">
+                  <span class="sidenav-mini-icon"> p </span>
+                  <span class="sidenav-normal"> Play To Earn </span>
+                </a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link " href="../cryptoCategories/polkadoteco.html">
+                  <span class="sidenav-mini-icon"> P </span>
+                  <span class="sidenav-normal"> Polkadot Ecosystem </span>
+                </a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link " href="../cryptoCategories/solanaeco.html">
+                  <span class="sidenav-mini-icon"> S </span>
+                  <span class="sidenav-normal"> Solana Ecosystem </span>
+                </a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link " href="../cryptoCategories/avalancheeco.html">
+                  <span class="sidenav-mini-icon"> A </span>
+                  <span class="sidenav-normal"> Avalanche Ecosystem </span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a data-bs-toggle="collapse" href="#ada" class="nav-link collapsed" aria-controls="ada" role="button"
+            aria-expanded="false">
+            <div
+              class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center d-flex align-items-center justify-content-center  me-2">
+              <svg version="1.1" width="32px" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 375 346.5" style="enable-background:new 0 0 375 346.5;" xml:space="preserve">
+								<style type="text/css">
+									.st0{fill:#344767;}
+								</style>
+								<g id="Layer_2_1_">
+									<g id="Layer_1-2">
+										<path class="st0" d="M102.8,172c-0.8,13.9,9.9,25.8,23.8,26.6c0.5,0,1,0,1.5,0c14,0,25.3-11.3,25.2-25.3c0-14-11.3-25.3-25.3-25.2
+											C114.6,148.1,103.5,158.6,102.8,172z"></path>
+										<path class="st0" d="M8.6,165.5c-4.5-0.3-8.4,3.2-8.6,7.7s3.2,8.4,7.7,8.6c4.5,0.3,8.3-3.2,8.6-7.7
+											C16.6,169.6,13.1,165.8,8.6,165.5C8.6,165.5,8.6,165.5,8.6,165.5z"></path>
+										<path class="st0" d="M101.2,25.4c4-2,5.6-7,3.6-11c-2-4-7-5.6-11-3.6c-4,2-5.6,6.9-3.6,10.9C92.2,25.8,97.1,27.5,101.2,25.4
+											C101.1,25.4,101.2,25.4,101.2,25.4z"></path>
+										<path class="st0" d="M126.8,70.1c6.2-3.1,8.7-10.7,5.6-16.9s-10.7-8.7-16.9-5.6c-6.2,3.1-8.7,10.7-5.6,16.9
+											C113,70.7,120.6,73.2,126.8,70.1z"></path>
+										<path class="st0" d="M40.6,100.8c4.8,3.1,11.2,1.8,14.4-3c3.1-4.8,1.8-11.2-3-14.4c-4.8-3.1-11.2-1.8-14.4,3c0,0,0,0,0,0
+											C34.4,91.2,35.8,97.7,40.6,100.8z"></path>
+										<path class="st0" d="M55.9,161c-7-0.4-12.9,4.9-13.3,11.9s4.9,12.9,11.9,13.3c7,0.4,12.9-4.9,13.3-11.9c0,0,0,0,0,0
+											C68.2,167.4,62.9,161.4,55.9,161z"></path>
+										<path class="st0" d="M42,245.7c-5.1,2.6-7.2,8.8-4.6,14c2.6,5.1,8.8,7.2,14,4.6c5.1-2.6,7.2-8.8,4.6-14c0,0,0,0,0,0
+											C53.4,245.2,47.1,243.1,42,245.7C42,245.7,42,245.7,42,245.7z"></path>
+										<path class="st0" d="M91,134.9c6.9,4.5,16.1,2.6,20.5-4.3c4.5-6.9,2.6-16.1-4.3-20.5c-6.9-4.5-16.1-2.6-20.5,4.3
+											C82.2,121.2,84.1,130.4,91,134.9C91,134.9,91,134.9,91,134.9z"></path>
+										<path class="st0" d="M246.5,69.1c5.8,3.8,13.7,2.2,17.5-3.6s2.2-13.7-3.6-17.5c-5.8-3.8-13.7-2.2-17.5,3.6c0,0,0,0,0,0
+											C239,57.5,240.6,65.3,246.5,69.1C246.5,69.1,246.5,69.1,246.5,69.1z"></path>
+										<path class="st0" d="M272.3,24.6c3.8,2.5,8.8,1.4,11.3-2.4s1.4-8.8-2.4-11.3c-3.8-2.5-8.8-1.4-11.3,2.3
+											C267.5,17,268.6,22.1,272.3,24.6C272.3,24.6,272.3,24.6,272.3,24.6z"></path>
+										<path class="st0" d="M248.4,147.9c-13.9-0.8-25.9,9.9-26.6,23.8c-0.8,13.9,9.9,25.9,23.8,26.6c0.5,0,1,0,1.4,0
+											c13.9,0,25.2-11.3,25.2-25.3C272.3,159.7,261.8,148.6,248.4,147.9L248.4,147.9z"></path>
+										<path class="st0" d="M135.1,133.1c4.3,8.5,13,13.9,22.6,13.9c13.9,0,25.2-11.3,25.2-25.3c0-3.9-0.9-7.8-2.7-11.4
+											c-6.3-12.5-21.5-17.5-33.9-11.2C133.8,105.5,128.8,120.7,135.1,133.1L135.1,133.1z"></path>
+										<path class="st0" d="M333,100.8c5.1-2.6,7.1-8.9,4.5-14c-2.6-5.1-8.9-7.1-14-4.5c-5.1,2.6-7.1,8.8-4.6,13.9
+											C321.6,101.3,327.8,103.4,333,100.8C333,100.8,333,100.8,333,100.8z"></path>
+										<path class="st0" d="M269,108.8c-7.3,3.7-10.3,12.6-6.6,19.9c3.7,7.3,12.6,10.3,19.9,6.6c7.3-3.7,10.3-12.6,6.6-19.9
+											C285.2,108.1,276.3,105.2,269,108.8z"></path>
+										<path class="st0" d="M186.5,20.8c5.7,0.3,10.6-4.1,11-9.8s-4.1-10.6-9.8-11c-5.7-0.3-10.6,4-11,9.7
+											C176.4,15.5,180.8,20.4,186.5,20.8C186.5,20.8,186.5,20.8,186.5,20.8z"></path>
+										<path class="st0" d="M186.4,86.1c8.2,0.5,15.2-5.8,15.6-14c0.5-8.2-5.8-15.2-14-15.6c-8.2-0.5-15.2,5.8-15.6,14
+											C172,78.7,178.2,85.7,186.4,86.1C186.4,86.1,186.4,86.1,186.4,86.1z"></path>
+										<path class="st0" d="M106,237.7c7.3-3.7,10.3-12.6,6.6-19.9c-3.7-7.3-12.6-10.3-19.9-6.6c-7.3,3.7-10.3,12.6-6.6,19.9
+											C89.8,238.4,98.7,241.4,106,237.7z"></path>
+										<path class="st0" d="M196,107.8c-7.6,11.7-4.4,27.3,7.3,34.9c11.7,7.6,27.3,4.4,34.9-7.3c7.6-11.7,4.4-27.3-7.3-34.9
+											c-4.1-2.7-8.9-4.1-13.8-4.1C208.6,96.4,200.7,100.7,196,107.8z"></path>
+										<path class="st0" d="M239.9,213.4c-6.3-12.5-21.5-17.5-33.9-11.2c-12.5,6.3-17.5,21.5-11.2,33.9c6.3,12.5,21.5,17.5,33.9,11.2
+											c0,0,0,0,0,0c12.4-6.2,17.5-21.2,11.3-33.7C240,213.5,240,213.5,239.9,213.4z"></path>
+										<path class="st0" d="M284,211.6c-6.9-4.5-16.1-2.6-20.5,4.3c-4.5,6.9-2.6,16.1,4.3,20.5c6.9,4.5,16.1,2.6,20.5-4.3
+											C292.8,225.3,290.9,216.1,284,211.6C284,211.6,284,211.6,284,211.6z"></path>
+										<path class="st0" d="M332.4,173.7c0.4-7-4.9-12.9-11.9-13.3c-7-0.4-12.9,4.9-13.3,11.9c-0.4,7,4.9,12.9,11.9,13.3c0,0,0,0,0,0
+											C326,186,332,180.6,332.4,173.7z"></path>
+										<path class="st0" d="M367.3,164.7c-4.5-0.3-8.4,3.2-8.6,7.7s3.2,8.4,7.7,8.6c4.5,0.3,8.3-3.2,8.6-7.7
+											C375.2,168.8,371.8,165,367.3,164.7z"></path>
+										<path class="st0" d="M334.4,245.7c-4.8-3.1-11.2-1.8-14.4,3c-3.1,4.8-1.8,11.2,3,14.4c4.8,3.1,11.2,1.8,14.4-3
+											C340.6,255.3,339.2,248.8,334.4,245.7C334.4,245.7,334.4,245.7,334.4,245.7z"></path>
+										<path class="st0" d="M102.6,321.9c-3.8-2.5-8.8-1.4-11.3,2.3c-2.5,3.8-1.4,8.8,2.3,11.3c3.8,2.5,8.8,1.4,11.3-2.3c0,0,0,0,0,0
+											C107.5,329.5,106.4,324.4,102.6,321.9z"></path>
+										<path class="st0" d="M273.8,321.1c-4,2-5.6,7-3.6,11c2,4,7,5.6,11,3.6c4-2,5.6-6.9,3.6-10.9C282.8,320.7,277.9,319,273.8,321.1
+											C273.9,321.1,273.8,321.1,273.8,321.1z"></path>
+										<path class="st0" d="M179,238.7c7.6-11.7,4.4-27.3-7.3-35c-11.7-7.6-27.3-4.4-35,7.3s-4.4,27.3,7.3,35c4.1,2.7,8.9,4.1,13.8,4.1
+											C166.4,250.2,174.3,245.9,179,238.7z"></path>
+										<path class="st0" d="M128.5,277.4c-5.8-3.8-13.7-2.2-17.5,3.6c-3.8,5.8-2.2,13.7,3.6,17.5s13.7,2.2,17.5-3.6c0,0,0,0,0,0
+											C136,289.1,134.4,281.2,128.5,277.4z"></path>
+										<path class="st0" d="M187.4,325.7c-5.7-0.3-10.6,4.1-11,9.8s4.1,10.6,9.8,11c5.7,0.3,10.6-4,11-9.7
+											C197.5,331,193.1,326.1,187.4,325.7C187.4,325.7,187.4,325.7,187.4,325.7z"></path>
+										<path class="st0" d="M187.5,260.4c-8.2-0.5-15.2,5.8-15.6,14c-0.5,8.2,5.8,15.2,14,15.6c8.2,0.4,15.2-5.8,15.6-14
+											C202,267.9,195.7,260.8,187.5,260.4C187.5,260.4,187.5,260.4,187.5,260.4z"></path>
+										<path class="st0" d="M248.2,276.4c-6.2,3.2-8.7,10.8-5.5,17c3.2,6.2,10.8,8.7,17,5.5c6.2-3.1,8.7-10.7,5.6-16.9
+											C262.1,275.8,254.5,273.2,248.2,276.4C248.2,276.4,248.2,276.4,248.2,276.4z"></path>
+									</g>
+								</g>
+						</svg>
+            </div>
+            <span class="nav-link-text ms-1">Cardano</span>
+          </a>
+          <div class="collapse" id="ada">
+            <ul class="nav ms-4 ps-3">
+              <li class="nav-item ">
+                <a class="nav-link " href="../adachecker.html">
+                  <span class="sidenav-mini-icon"> P </span>
+                  <span class="sidenav-normal"> Cardano Wallet Checker </span>
+                </a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link " href="../cardanodefi.html">
+                  <span class="sidenav-mini-icon"> C </span>
+                  <span class="sidenav-normal"> Cardano DeFi </span>
+                </a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link " href="../cardanoprojects.html">
+                  <span class="sidenav-mini-icon"> P </span>
+                  <span class="sidenav-normal"> პროექტები Cardano-ზე </span>
+                </a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link " href="../hosky.html">
+                  <span class="sidenav-mini-icon"> P </span>
+                  <span class="sidenav-normal"> Hosky Rarity </span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../market.html">
+            <div
+              class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#344767"
+                class="bi bi-info-circle-fill" viewBox="0 0 16 16">
+                <path
+                  d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z" />
+              </svg>
+            </div>
+            <span class="nav-link-text ms-1">მარკეტი</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../calendar.html">
+            <div
+              class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#344767" class="bi bi-calendar3" viewBox="0 0 16 16">
+                <path d="M14 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857V3.857z"/>
+                <path d="M6.5 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+              </svg>
+            </div>
+            <span class="nav-link-text ms-1">კალენდარი</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../tokens_category.html">
+            <div
+              class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#344767" class="bi bi-bookmark-fill"
+                viewBox="0 0 16 16">
+                <path
+                  d="M2 2v13.5a.5.5 0 0 0 .74.439L8 13.069l5.26 2.87A.5.5 0 0 0 14 15.5V2a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2z" />
+              </svg>
+            </div>
+            <span class="nav-link-text ms-1">კატეგორიები</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a data-bs-toggle="collapse" href="#upcomingprojects" class="nav-link collapsed" aria-controls="upcomingprojects" role="button"
+            aria-expanded="false">
+            <div
+              class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center d-flex align-items-center justify-content-center  me-2">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#344767" class="bi bi-window-desktop" viewBox="0 0 16 16">
+                <path d="M3.5 11a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-9Z"/>
+                <path d="M2.375 1A2.366 2.366 0 0 0 0 3.357v9.286A2.366 2.366 0 0 0 2.375 15h11.25A2.366 2.366 0 0 0 16 12.643V3.357A2.366 2.366 0 0 0 13.625 1H2.375ZM1 3.357C1 2.612 1.611 2 2.375 2h11.25C14.389 2 15 2.612 15 3.357V4H1v-.643ZM1 5h14v7.643c0 .745-.611 1.357-1.375 1.357H2.375A1.366 1.366 0 0 1 1 12.643V5Z"/>
+              </svg>
+            </div>
+            <span class="nav-link-text ms-1">ახალი პროექტები</span>
+          </a>
+          <div class="collapse" id="upcomingprojects">
+            <ul class="nav ms-4 ps-3">
+              <li class="nav-item ">
+                <a class="nav-link " href="../bscpad_projects.html">
+                  <span class="sidenav-mini-icon"> B </span>
+                  <span class="sidenav-normal"> BSCPad-ზე </span>
+                </a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link " href="../ethpad_projects.html">
+                  <span class="sidenav-mini-icon"> E </span>
+                  <span class="sidenav-normal"> ETHPad-ზე </span>
+                </a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link " href="../adapad_projects.html">
+                  <span class="sidenav-mini-icon"> A </span>
+                  <span class="sidenav-normal"> ADAPad-ზე </span>
+                </a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link " href="../tronpad_projects.html">
+                  <span class="sidenav-mini-icon"> T </span>
+                  <span class="sidenav-normal"> TronPad-ზე </span>
+                </a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link " href="../velaspad_projects.html">
+                  <span class="sidenav-mini-icon"> V </span>
+                  <span class="sidenav-normal"> VelasPad-ზე </span>
+                </a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link " href="../gzone_projects.html">
+                  <span class="sidenav-mini-icon"> G </span>
+                  <span class="sidenav-normal"> GameZone-ზე </span>
+                </a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link " href="../fs_projects.html">
+                  <span class="sidenav-mini-icon"> F </span>
+                  <span class="sidenav-normal"> FantomStarter-ზე </span>
+                </a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link " href="../xava_projects.html">
+                  <span class="sidenav-mini-icon"> A </span>
+                  <span class="sidenav-normal"> Avalaunch-ზე </span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../protocols.html">
+            <div
+              class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#344767"
+                class="bi bi-lightning-charge-fill" viewBox="0 0 16 16">
+                <path
+                  d="M11.251.068a.5.5 0 0 1 .227.58L9.677 6.5H13a.5.5 0 0 1 .364.843l-8 8.5a.5.5 0 0 1-.842-.49L6.323 9.5H3a.5.5 0 0 1-.364-.843l8-8.5a.5.5 0 0 1 .615-.09z" />
+              </svg>
+            </div>
+            <span class="nav-link-text ms-1">პროტოკოლები</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../tvlchains.html">
+            <div
+              class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#344767" class="bi bi-lock-fill"
+                viewBox="0 0 16 16">
+                <path
+                  d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2zm3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2z" />
+              </svg>
+            </div>
+            <span class="nav-link-text ms-1">TVL ქსელებზე</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../exchanges.html">
+            <div
+              class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#344767"
+                class="bi bi-currency-exchange" viewBox="0 0 16 16">
+                <path
+                  d="M0 5a5.002 5.002 0 0 0 4.027 4.905 6.46 6.46 0 0 1 .544-2.073C3.695 7.536 3.132 6.864 3 5.91h-.5v-.426h.466V5.05c0-.046 0-.093.004-.135H2.5v-.427h.511C3.236 3.24 4.213 2.5 5.681 2.5c.316 0 .59.031.819.085v.733a3.46 3.46 0 0 0-.815-.082c-.919 0-1.538.466-1.734 1.252h1.917v.427h-1.98c-.003.046-.003.097-.003.147v.422h1.983v.427H3.93c.118.602.468 1.03 1.005 1.229a6.5 6.5 0 0 1 4.97-3.113A5.002 5.002 0 0 0 0 5zm16 5.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0zm-7.75 1.322c.069.835.746 1.485 1.964 1.562V14h.54v-.62c1.259-.086 1.996-.74 1.996-1.69 0-.865-.563-1.31-1.57-1.54l-.426-.1V8.374c.54.06.884.347.966.745h.948c-.07-.804-.779-1.433-1.914-1.502V7h-.54v.629c-1.076.103-1.808.732-1.808 1.622 0 .787.544 1.288 1.45 1.493l.358.085v1.78c-.554-.08-.92-.376-1.003-.787H8.25zm1.96-1.895c-.532-.12-.82-.364-.82-.732 0-.41.311-.719.824-.809v1.54h-.005zm.622 1.044c.645.145.943.38.943.796 0 .474-.37.8-1.02.86v-1.674l.077.018z" />
+              </svg>
+            </div>
+            <span class="nav-link-text ms-1">ბირჟები</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../networks.html">
+            <div
+              class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" stroke="none" stroke-width="1"
+                fill="#344767" fill-rule="evenodd" class="bi bi-hdd-network-fill" viewBox="0 0 16 16">
+                <path
+                  d="M2 2a2 2 0 0 0-2 2v1a2 2 0 0 0 2 2h5.5v3A1.5 1.5 0 0 0 6 11.5H.5a.5.5 0 0 0 0 1H6A1.5 1.5 0 0 0 7.5 14h1a1.5 1.5 0 0 0 1.5-1.5h5.5a.5.5 0 0 0 0-1H10A1.5 1.5 0 0 0 8.5 10V7H14a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H2zm.5 3a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1zm2 0a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1z" />
+              </svg>
+            </div>
+            <span class="nav-link-text ms-1">ქსელები</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../bot_groups.html">
+            <div
+              class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#344767"
+                class="bi bi-chat-left-dots-fill" viewBox="0 0 16 16">
+                <path
+                  d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H4.414a1 1 0 0 0-.707.293L.854 15.146A.5.5 0 0 1 0 14.793V2zm5 4a1 1 0 1 0-2 0 1 1 0 0 0 2 0zm4 0a1 1 0 1 0-2 0 1 1 0 0 0 2 0zm3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" />
+              </svg>
+            </div>
+            <span class="nav-link-text ms-1">ბოტები/ჯგუფები</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../linkebi.html">
+            <div
+              class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#344767" class="bi bi-folder-symlink-fill" viewBox="0 0 16 16">
+                <path d="M13.81 3H9.828a2 2 0 0 1-1.414-.586l-.828-.828A2 2 0 0 0 6.172 1H2.5a2 2 0 0 0-2 2l.04.87a1.99 1.99 0 0 0-.342 1.311l.637 7A2 2 0 0 0 2.826 14h10.348a2 2 0 0 0 1.991-1.819l.637-7A2 2 0 0 0 13.81 3zM2.19 3c-.24 0-.47.042-.683.12L1.5 2.98a1 1 0 0 1 1-.98h3.672a1 1 0 0 1 .707.293L7.586 3H2.19zm9.608 5.271-3.182 1.97c-.27.166-.616-.036-.616-.372V9.1s-2.571-.3-4 2.4c.571-4.8 3.143-4.8 4-4.8v-.769c0-.336.346-.538.616-.371l3.182 1.969c.27.166.27.576 0 .742z"/>
+              </svg>
+            </div>
+            <span class="nav-link-text ms-1">საჭირო რაღაცეები</span>
+          </a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link" href="../watcher.html">
+            <div
+              class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="#344767" class="bi bi-eye-fill"
+                viewBox="0 0 16 16">
+                <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z" />
+                <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z" />
+              </svg>
+            </div>
+            <span class="nav-link-text ms-1">Tracker</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </aside>
+  <main class="main-content position-relative max-height-vh-100 h-100 mt-1 border-radius-lg ">
+    <!-- Navbar -->
+    <nav class="navbar navbar-main navbar-expand-lg px-0 mx-4 shadow-none border-radius-xl" id="navbarBlur"
+      navbar-scroll="false">
+      <div class="container-fluid py-0 px-3">
+        <nav id="attentionAlert" aria-label="breadcrumb">
+          <ol class="breadcrumb bg-transparent mb-0 pb-0 pt-1 px-0 me-sm-6 me-5">
+            <div class="alert alert-danger text-white d-flex align-items-center" role="alert">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                class="bi bi-exclamation-triangle-fill flex-shrink-0 me-2" viewBox="0 0 16 16" role="img"
+                aria-label="Warning:">
+                <path
+                  d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+              </svg>
+              <div id="AttentionMessage">
+
+              </div>
+            </div>
+          </ol>
+        </nav>
+        <div class="collapse navbar-collapse mt-sm-0 mt-2 me-md-0 me-sm-4" id="navbar">
+          <div class="ms-md-auto pe-md-3 d-flex align-items-center">
+            <div class="input-group">
+            </div>
+          </div>
+          <div id="switchNetworkBtn" class="bd-example">
+            <div class="dropdown me-2 mt-3 mb-0">
+              <a href="#" class="btn p-2 btn dropdown-toggle " data-bs-toggle="dropdown"
+                id="navbarDropdownMenuLink2">აირჩიეთ ქსელი</a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink2">
+                <li>
+                  <a id="switchToBSC" class="dropdown-item" href="#">
+                    <svg class="me-1" width="25" height="25" viewBox="0 0 30 30" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M0 10C0 4.47715 4.47715 0 10 0H20C25.5228 0 30 4.47715 30 10V20C30 25.5228 25.5228 30 20 30H10C4.47715 30 0 25.5228 0 20V10Z"
+                        fill="#F3BA2F" />
+                      <path
+                        d="M11.3588 13.5038L15 9.8625L18.6431 13.5056L20.7619 11.3869L15 5.625L9.24 11.385L11.3588 13.5038ZM5.625 15L7.74375 12.8812L9.8625 15L7.74375 17.1188L5.625 15ZM11.3588 16.4963L15 20.1375L18.6431 16.4944L20.7619 18.6122L15 24.375L9.24 18.615L9.23719 18.6122L11.3588 16.4963ZM20.1375 15L22.2563 12.8812L24.375 15L22.2563 17.1188L20.1375 15ZM17.1488 14.9981H17.1506V15L15 17.1506L12.8522 15.0037L12.8484 15L12.8522 14.9972L13.2281 14.6203L13.4109 14.4375L15 12.8494L17.1497 14.9991L17.1488 14.9981Z"
+                        fill="white" />
+                    </svg>
+                    BSC
+                  </a>
+                </li>
+                <li>
+                  <a id="switchToETH" class="dropdown-item" href="#">
+                    <svg class="me-1" width="25" height="25" viewBox="0 0 30 30" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M0 10C0 4.47715 4.47715 0 10 0H20C25.5228 0 30 4.47715 30 10V20C30 25.5228 25.5228 30 20 30H10C4.47715 30 0 25.5228 0 20V10Z"
+                        fill="#627EEA" />
+                      <path d="M15.0294 3.75V12.0656L22.0578 15.2062L15.0294 3.75Z" fill="white" fillOpacity="0.602" />
+                      <path d="M15.0294 3.75L8 15.2062L15.0294 12.0656V3.75Z" fill="white" />
+                      <path d="M15.0294 20.595V26.2453L22.0625 16.515L15.0294 20.595Z" fill="white"
+                        fillOpacity="0.602" />
+                      <path d="M15.0294 26.2453V20.594L8 16.515L15.0294 26.2453Z" fill="white" />
+                      <path d="M15.0294 19.2872L22.0578 15.2063L15.0294 12.0675V19.2872Z" fill="white"
+                        fillOpacity="0.2" />
+                      <path d="M8 15.2063L15.0294 19.2872V12.0675L8 15.2063Z" fill="white" fillOpacity="0.602" />
+                    </svg>
+                    ETH
+                  </a>
+                </li>
+                <li>
+                  <a id="switchToMATIC" class="dropdown-item" href="#">
+                    <svg class="me-1" width="25" height="25" viewBox="0 0 30 30" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M0 10C0 4.47715 4.47715 0 10 0H20C25.5228 0 30 4.47715 30 10V20C30 25.5228 25.5228 30 20 30H10C4.47715 30 0 25.5228 0 20V10Z"
+                        fill="#8247E5" />
+                      <path
+                        d="M20.4896 11.5015C20.1157 11.2878 19.635 11.2878 19.2077 11.5015L16.2166 13.2641L14.1869 14.3858L11.2493 16.1484C10.8754 16.362 10.3947 16.362 9.96736 16.1484L7.67062 14.7596C7.29674 14.546 7.02967 14.1187 7.02967 13.638V10.9674C7.02967 10.5401 7.24332 10.1128 7.67062 9.8457L9.96736 8.51039C10.3412 8.29674 10.822 8.29674 11.2493 8.51039L13.546 9.89911C13.9199 10.1128 14.1869 10.5401 14.1869 11.0208V12.7834L16.2166 11.6083V9.79228C16.2166 9.36499 16.003 8.93769 15.5757 8.67062L11.3027 6.16024C10.9288 5.94659 10.4481 5.94659 10.0208 6.16024L5.64095 8.72404C5.21365 8.93769 5 9.36499 5 9.79228V14.8131C5 15.2404 5.21365 15.6677 5.64095 15.9347L9.96736 18.4451C10.3412 18.6588 10.822 18.6588 11.2493 18.4451L14.1869 16.7359L16.2166 15.5608L19.1543 13.8516C19.5282 13.638 20.0089 13.638 20.4362 13.8516L22.7329 15.1869C23.1068 15.4006 23.3739 15.8279 23.3739 16.3086V18.9792C23.3739 19.4065 23.1602 19.8338 22.7329 20.1009L20.4896 21.4362C20.1157 21.6499 19.635 21.6499 19.2077 21.4362L16.911 20.1009C16.5371 19.8872 16.27 19.4599 16.27 18.9792V17.27L14.2404 18.4451V20.2077C14.2404 20.635 14.454 21.0623 14.8813 21.3294L19.2077 23.8398C19.5816 24.0534 20.0623 24.0534 20.4896 23.8398L24.816 21.3294C25.1899 21.1157 25.457 20.6884 25.457 20.2077V15.1335C25.457 14.7062 25.2433 14.2789 24.816 14.0119L20.4896 11.5015Z"
+                        fill="white" />
+                    </svg>
+                    Polygon
+                  </a>
+                </li>
+                <li>
+                  <a id="switchToAVAX" class="dropdown-item" href="#">
+                    <svg class="me-1" width="25" height="25" viewBox="0 0 30 30" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M0 10C0 4.47715 4.47715 0 10 0H20C25.5228 0 30 4.47715 30 10V20C30 25.5228 25.5228 30 20 30H10C4.47715 30 0 25.5228 0 20V10Z"
+                        fill="#E84142" />
+                      <path
+                        d="M20.2914 15.3898C20.8111 14.4921 21.6497 14.4921 22.1693 15.3898L25.4056 21.0709C25.9252 21.9685 25.5 22.7008 24.4607 22.7008H17.941C16.9134 22.7008 16.4882 21.9685 16.9961 21.0709L20.2914 15.3898ZM14.0315 4.45277C14.5512 3.55513 15.378 3.55513 15.8977 4.45277L16.6182 5.75198L18.3189 8.74017C18.7323 9.59056 18.7323 10.5945 18.3189 11.4449L12.6142 21.3307C12.0945 22.1339 11.2323 22.6417 10.2756 22.7008H5.53942C4.50005 22.7008 4.07485 21.9803 4.59454 21.0709L14.0315 4.45277Z"
+                        fill="white" />
+                    </svg>
+                    AVAX
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div id="logoutButton" class="dropdown mt-3">
+            <button id="connectedAddress" class="btn bg-gradient-dark dropdown-toggle" type="button"
+              id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+              მის
+            </button>
+            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
+              <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">საფულე</a>
+              </li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a id="btn-logout" class="dropdown-item" href="#">გამოსვლა</a></li>
+            </ul>
+          </div>
+          <ul class="navbar-nav justify-content-end">
+            <li class="nav-item d-flex align-items-center">
+              <a href="javascript:;" class="nav-link text-body font-weight-bold px-0">
+                <button id="btn-login" class="btn bg-gradient-dark mb-0" data-bs-toggle="modal" data-bs-target="#connectWalletModal">შესვლა</button>
+              </a>
+            </li>
+            <li class="nav-item d-xl-none ps-3 d-flex align-items-center">
+              <a href="javascript:;" class="nav-link text-body p-0" id="iconNavbarSidenav">
+                <div class="sidenav-toggler-inner">
+                  <i class="sidenav-toggler-line"></i>
+                  <i class="sidenav-toggler-line"></i>
+                  <i class="sidenav-toggler-line"></i>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- End Navbar -->
+    <div class="container-fluid py-4">
+      <div class="row">
+        <div class="col-xl-3 col-sm-6 mb-xl-0 mb-4">
+          <div class="card">
+            <div class="card-body p-3">
+              <div class="row">
+                <div class="col-8">
+                  <div class="numbers">
+                    <p id="btn-login" class="text-sm mb-0 text-capitalize font-weight-bold">ბალანსი
+                      <svg class="mb-1" style="cursor: pointer;" data-bs-toggle="tooltip" data-bs-placement="top"
+                        title="ბალანსს აჩვენებს რომელი ქსელითაც ხართ დაკავშირებული." xmlns="http://www.w3.org/2000/svg"
+                        width="16" height="16" fill="currentColor" class="bi bi-question-circle" viewBox="0 0 16 16">
+                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                        <path
+                          d="M5.255 5.786a.237.237 0 0 0 .241.247h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286zm1.557 5.763c0 .533.425.927 1.01.927.609 0 1.028-.394 1.028-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94z" />
+                      </svg>
+                    </p>
+                    <h5 id="userNativeBalance" class="font-weight-bolder mb-0">
+                      <div class="spinner-grow spinner-grow-sm" role="status">
+                        <span class="visually-hidden">Loading...</span>
+                      </div>
+                    </h5>
+                  </div>
+                </div>
+                <div class="col-4 text-end">
+                  <div class="icon icon-shape bg-gradient-primary shadow text-center border-radius-md">
+                    <i class="ni ni-money-coins text-lg opacity-10" aria-hidden="true"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-3 col-sm-6 mb-xl-0 mb-4">
+          <div class="card">
+            <div class="card-body p-3">
+              <div class="row">
+                <div class="col-8">
+                  <div class="numbers">
+                    <p class="text-sm mb-0 text-capitalize font-weight-bold">ტოკენები
+                      <svg class="mb-1" style="cursor: pointer;" data-bs-toggle="tooltip" data-bs-placement="top"
+                        title="ტოკენებს აჩვენებს რომელი ქსელითაც ხართ დაკავშირებული." xmlns="http://www.w3.org/2000/svg"
+                        width="16" height="16" fill="currentColor" class="bi bi-question-circle" viewBox="0 0 16 16">
+                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                        <path
+                          d="M5.255 5.786a.237.237 0 0 0 .241.247h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286zm1.557 5.763c0 .533.425.927 1.01.927.609 0 1.028-.394 1.028-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94z" />
+                      </svg>
+                    </p>
+                    <h5 id="userTokenCounter" class="font-weight-bolder mb-0">
+                      <div class="spinner-grow spinner-grow-sm" role="status">
+                        <span class="visually-hidden">Loading...</span>
+                      </div>
+                      <span class="text-success text-sm font-weight-bolder"></span>
+                    </h5>
+                  </div>
+                </div>
+                <div class="col-4 text-end">
+                  <div class="icon icon-shape bg-gradient-primary shadow text-center border-radius-md">
+                    <i class="fa fa-database text-lg opacity-10" aria-hidden="true"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-3 col-sm-6 mb-xl-0 mb-4">
+          <div class="card">
+            <div class="card-body p-3">
+              <div class="row">
+                <div class="col-8">
+                  <div class="numbers">
+                    <p class="text-sm mb-0 text-capitalize font-weight-bold">NFT
+                      <svg class="mb-1" style="cursor: pointer;" data-bs-toggle="tooltip" data-bs-placement="top"
+                        title="NFT-ებს აჩვენებს რომელი ქსელითაც ხართ დაკავშირებული." xmlns="http://www.w3.org/2000/svg"
+                        width="16" height="16" fill="currentColor" class="bi bi-question-circle" viewBox="0 0 16 16">
+                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                        <path
+                          d="M5.255 5.786a.237.237 0 0 0 .241.247h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286zm1.557 5.763c0 .533.425.927 1.01.927.609 0 1.028-.394 1.028-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94z" />
+                      </svg>
+                    </p>
+                    <h5 id="userNFTCounter" class="font-weight-bolder mb-0">
+                      <div class="spinner-grow spinner-grow-sm" role="status">
+                        <span class="visually-hidden">Loading...</span>
+                      </div>
+                      <span class="text-danger text-sm font-weight-bolder"></span>
+                    </h5>
+                  </div>
+                </div>
+                <div class="col-4 text-end">
+                  <div class="icon icon-shape bg-gradient-primary shadow text-center border-radius-md">
+                    <i class="fa fa-picture-o text-lg opacity-10" aria-hidden="true"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-3 col-sm-6">
+          <div class="card">
+            <div class="card-body p-3">
+              <div class="row">
+                <div class="col-8">
+                  <div class="numbers">
+                    <p class="text-sm mb-0 text-capitalize font-weight-bold">ბიტკოინის ფასი</p>
+                    <h5 id="bitcoinPriceCard" class="font-weight-bolder mb-0">
+                      <div class="spinner-grow spinner-grow-sm" role="status">
+                        <span class="visually-hidden">Loading...</span>
+                      </div>
+
+                    </h5>
+                  </div>
+                </div>
+                <div class="col-4 text-end">
+                  <div class="icon icon-shape bg-gradient-primary shadow text-center border-radius-md">
+                    <i class="fa fa-btc text-lg opacity-10" aria-hidden="true"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script type="text/javascript" src="https://files.coinmarketcap.com/static/widget/coinMarquee.js"></script>
+      <div class="mt-4" id="coinmarketcap-widget-marquee" coins="1,1027,1839,825,2010,5426,52" currency="USD"
+        theme="light" transparent="false" show-symbol-logo="true"></div>
+      <div class="row mt-4">
+        <div class="col-lg-7 mb-lg-0 mb-4">
+          <div class="card">
+            <div class="card-body p-0">
+              <div class="row">
+                <div class="col-lg-12 col-md-12 mt-lg-0">
+                  <div class="card h-100">
+                    <div class="card-header pb-0 p-3">
+                      <div class="d-flex align-items-center">
+                        <h6 class="mb-0">ბალანსი სხვადასხვა ქსელებზე</h6>
+                      </div>
+                    </div>
+                    <div class="card-body p-3">
+                      <div class="row">
+                        <div class="col-lg-6 col-12">
+                          <div class="table-responsive">
+                            <table class="table align-items-center mb-0">
+                              <tbody>
+                                <tr>
+                                  <td>
+                                    <div class="d-flex px-2 py-1">
+                                      <div class="icon icon-shape icon-sm shadow border-radius-sm bg-gradient-warning text-center me-2 d-flex align-items-center justify-content-center">
+                                        <img data-bs-toggle="tooltip" data-bs-placement="top" title="Binance Smart Chain (BSC)" src="/img/svg_logos/bnb-logo.svg" style="width: 20px;" alt="">
+                                      </div>
+                                      <div class="d-flex flex-column justify-content-center">
+                                        <h6 id="ocBSC" class="mb-0 text-sm">
+                                          <div class="spinner-grow spinner-grow-sm" role="status">
+                                            <span class="visually-hidden">Loading...</span>
+                                          </div>
+                                        </h6>
+                                      </div>
+                                    </div>
+                                  </td>
+                                  <td class="align-middle text-center text-sm">
+                                    <span id="ocBSCPrice" class="text-xs font-weight-bold"></span>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    <div class="d-flex px-2 py-1">
+                                      <div
+                                        class="icon icon-shape icon-sm shadow border-radius-sm bg-gradient-info text-center me-2 d-flex align-items-center justify-content-center">
+                                        <img data-bs-toggle="tooltip" data-bs-placement="top" title="Ethereum (ETH)" src="/img/svg_logos/eth-logo.svg" style="width: 15px;" alt="">
+                                      </div>
+                                      <div class="d-flex flex-column justify-content-center">
+                                        <h6 id="ocETH" class="mb-0 text-sm">
+                                          <div class="spinner-grow spinner-grow-sm" role="status">
+                                            <span class="visually-hidden">Loading...</span>
+                                          </div>
+                                        </h6>
+                                      </div>
+                                    </div>
+                                  </td>
+                                  <td class="align-middle text-center text-sm">
+                                    <span id="ocETHPrice" class="text-xs font-weight-bold"></span>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    <div class="d-flex px-2 py-1">
+                                      <div
+                                        class="icon icon-shape icon-sm shadow border-radius-sm bg-gradient-primary text-center me-2 d-flex align-items-center justify-content-center">
+                                        <img data-bs-toggle="tooltip" data-bs-placement="top" title="Polygon (MATIC)" src="/img/svg_logos/matic-logo.svg" style="width: 20px;" alt="">
+                                      </div>
+                                      <div class="d-flex flex-column justify-content-center">
+                                        <h6 id="ocMATIC" class="mb-0 text-sm">
+                                          <div class="spinner-grow spinner-grow-sm" role="status">
+                                            <span class="visually-hidden">Loading...</span>
+                                          </div>
+                                        </h6>
+                                      </div>
+                                    </div>
+                                  </td>
+                                  <td class="align-middle text-center text-sm">
+                                    <span id="ocMATICPrice" class="text-xs font-weight-bold"></span>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    <div class="d-flex px-2 py-1">
+                                      <div
+                                        class="icon icon-shape icon-sm shadow border-radius-sm bg-gradient-danger text-center me-2 d-flex align-items-center justify-content-center">
+                                        <img data-bs-toggle="tooltip" data-bs-placement="top" title="Avalanche (AVAX)" src="/img/svg_logos/avax-logo.svg" style="width: 23px;" alt="">
+                                      </div>
+                                      <div class="d-flex flex-column justify-content-center">
+                                        <h6 id="ocAVAX" class="mb-0 text-sm">
+                                          <div class="spinner-grow spinner-grow-sm" role="status">
+                                            <span class="visually-hidden">Loading...</span>
+                                          </div>
+                                        </h6>
+                                      </div>
+                                    </div>
+                                  </td>
+                                  <td class="align-middle text-center text-sm">
+                                    <span id="ocAVAXPrice" class="text-xs font-weight-bold"></span>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                        <div class="col-lg-6 col-12">
+                          <div class="card card-background card-background-mask-warning h-100 tilt" data-tilt=""
+                            style="will-change: transform; transform: perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1);">
+                            <div class="full-background"></div>
+                            <div class="card-body pt-4 text-center">
+                              <h2 class="text-white mb-0 mt-2 up">ბალანსი სულ</h2>
+                              <h1 id="fullBalancePrice" class="text-white mb-0 up">
+                                <div class="spinner-grow spinner-grow-sm" role="status">
+                                  <span class="visually-hidden">Loading...</span>
+                                </div>
+                              </h1>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-5">
+          <div class="card h-100 p-3">
+            <div class="overflow-hidden position-relative border-radius-lg bg-cover h-100"
+              style="background-image: url('../img/ivancik.jpg');">
+              <span class="mask bg-gradient-dark"></span>
+              <div class="card-body position-relative z-index-1 d-flex flex-column h-100 p-3">
+                <h5 class="text-white font-weight-bolder mb-4 pt-2">სწავლება</h5>
+                <p class="text-white">ისწავლე ყველაფერი კრიპტო სამყაროს შესახებ</p>
+                <a class="text-white text-sm font-weight-bold mb-0 icon-move-right mt-auto" href="javascript:;">
+                  მასწავლე
+                  <i class="fas fa-arrow-right text-sm ms-1" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- დეფი ინფორმაცია -->
+      <div class="row">
+        <div class="col-12">
+          <div class="card mb-1 mt-4">
+            <div class="card-header pb-0">
+              <h6>DeFi ინფორმაცია</h6>
+            </div>
+            <div class="card-body px-0 pt-0 pb-2">
+              <div class="table-responsive p-0">
+                <table class="table align-items-center mb-0">
+                  <thead>
+                    <tr>
+                      <th class="text-center text-uppercase text-bold text-xxs font-weight-bolder opacity-7">DeFi Market
+                        Cap</th>
+                      <th class="text-center text-uppercase text-bold text-xxs font-weight-bolder opacity-7">ETH Market
+                        Cap</th>
+                      <th class="text-center text-uppercase text-bold text-xxs font-weight-bolder opacity-7">ნავაჭრი
+                        24სთ</th>
+                      <th class="text-center text-uppercase text-bold text-xxs font-weight-bolder opacity-7">DeFi
+                        Dominance</th>
+                      <th class="text-center text-uppercase text-bold text-xxs font-weight-bolder opacity-7">DeFi Top
+                        Coin</th>
+                      <th class="text-center text-uppercase text-bold text-xxs font-weight-bolder opacity-7">DeFi Top
+                        Coin Dominance</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="align-middle text-center text-sm">
+                        <p id="defiMarketCap" class="text-sm font-weight-bold mb-0">-</p>
+                      </td>
+                      <td class="align-middle text-center text-sm">
+                        <p id="ethMarketCap" class="text-sm font-weight-bold mb-0">-</p>
+                      </td>
+                      <td class="align-middle text-center text-sm">
+                        <p id="defiVolume24h" class="text-sm font-weight-bold mb-0">-</p>
+                      </td>
+                      <td class="align-middle text-center">
+                        <p id="defiDominance" class="text-sm font-weight-bold mb-0">-</p>
+                      </td>
+                      <td class="align-middle text-center">
+                        <p id="defiTopCoin" class="text-sm font-weight-bold mb-0">-</p>
+                      </td>
+                      <td class="align-middle text-center">
+                        <p id="defiTopCoinDominance" class="text-sm font-weight-bold mb-0">-</p>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- დეფი ინფორმაცია დამთავრდა -->
+      <div class="row my-4">
+        <div class="col-lg-6 col-md-6 mb-md-0 mb-4">
+          <div class="card">
+            <div class="card-header pb-0">
+              <div class="row">
+                <div class="col-lg-6 col-7">
+                  <h6>პროექტები</h6>
+                  <p class="text-sm mb-0">
+                    <i class="fa fa-check text-info" aria-hidden="true"></i>
+                    <span class="font-weight-bold ms-1">გაითვალისწინეთ!</span> შეიძლება რომელიმე პროექტის TVL/ქსელი
+                    არასწორად იყოს მითითებული!
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="card-body px-0 pb-2">
+              <div class="table-responsive">
+                <table class="table align-items-center mb-0">
+                  <thead>
+                    <tr>
+                      <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">სახელი</th>
+                      <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">TVL</th>
+                      <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">ქსელი
+                      </th>
+                      <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
+                        კატეგორია</th>
+                      <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">ნახვა
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody id="topProjects">
+
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="card h-80">
+            <div class="card-header pb-0">
+              <h6>ტრენდული ქოინები CG-ზე 🚀🔥</h6>
+              <p class="text-sm">
+                <i class="fa fa-arrow-up text-success" aria-hidden="true"></i>
+                <span class="font-weight-bold">Powered by</span> <a target="_blank"
+                  href="https://www.coingecko.com/">CoinGecko</a>
+              </p>
+            </div>
+            <div class="card-body p-3">
+              <div id="trendingCoins" class="timeline timeline-one-side">
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="card h-100">
+            <div class="card-header pb-0">
+              <h6>ტრენდული ქოინები CMC-ზე 🚀🔥</h6>
+              <p class="text-sm">
+                <i class="fa fa-arrow-up text-success" aria-hidden="true"></i>
+                <span class="font-weight-bold">Powered by</span> <a target="_blank"
+                  href="https://coinmarketcap.com/">CoinMarketCap</a>
+              </p>
+            </div>
+            <div class="card-body p-3">
+              <div id="trendingCoinsCMC" class="timeline timeline-one-side">
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- საფულის მოდალი -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content border-0">
+            <div class="modal-header bg-gradient-test">
+              <h5 class="modal-title" id="exampleModalLabel">შენი საფულე</h5>
+              <button type="button" class="btn-close bg-secondary" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <p class="text-xs mt-1 mb-1 font-weight-bolder">შენი მისამართი</p>
+              <span id="walletAddress" class="badge p-2 badge-lg bg-gradient-primary"></span>
+              <p id="walletNativeCoinBalance" class="text-sm mt-3 mb-1 font-weight-bolder"></p>
+              <p id="viewOnExplorer" class="text-sm mt-3 mb-1 font-weight-bolder"></p>
+            </div>
+            <div class="modal-footer col d-flex justify-content-center">
+              <button type="button" class="btn bg-gradient-danger" data-bs-dismiss="modal">საფულიდან გამოსვლა</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- საფულის მოდალი -->
+
+      <!-- საფულის დაკავშირების მოდალი -->
+      <div class="modal fade" id="connectWalletModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-sm">
+          <div class="modal-content border-0">
+            <div class="modal-header bg-gradient-test">
+              <h5 class="modal-title" id="exampleModalLabel">დააკავშირეთ საფულე</h5>
+              <button type="button" class="btn-close bg-secondary" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="container">
+                <div class="row">
+                  <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                    <button id="btn-login-metamask" class="btn" width="100%" scale="md"><svg viewBox="0 0 40 40"
+                        width="40px" color="text" xmlns="http://www.w3.org/2000/svg" class="sc-bdnxRM dfRmJU">
+                        <path d="M36.0112 3.33337L22.1207 13.6277L24.7012 7.56091L36.0112 3.33337Z" fill="#E17726">
+                        </path>
+                        <path d="M4.00261 3.33337L17.7558 13.7238L15.2989 7.56091L4.00261 3.33337Z" fill="#E27625">
+                        </path>
+                        <path d="M31.0149 27.2023L27.3227 32.8573L35.2287 35.0397L37.4797 27.3258L31.0149 27.2023Z"
+                          fill="#E27625"></path>
+                        <path d="M2.53386 27.3258L4.77116 35.0397L12.6772 32.8573L8.9987 27.2023L2.53386 27.3258Z"
+                          fill="#E27625"></path>
+                        <path d="M12.2518 17.6496L10.0419 20.9712L17.8793 21.3281L17.6048 12.8867L12.2518 17.6496Z"
+                          fill="#E27625"></path>
+                        <path d="M27.762 17.6494L22.3129 12.7905L22.1207 21.3279L29.9581 20.9711L27.762 17.6494Z"
+                          fill="#E27625"></path>
+                        <path d="M12.6772 32.8574L17.3989 30.5652L13.336 27.3809L12.6772 32.8574Z" fill="#E27625">
+                        </path>
+                        <path d="M22.6009 30.5652L27.3226 32.8574L26.6637 27.3809L22.6009 30.5652Z" fill="#E27625">
+                        </path>
+                        <path d="M27.3226 32.8575L22.6009 30.5653L22.9715 33.6399L22.9303 34.9301L27.3226 32.8575Z"
+                          fill="#D5BFB2"></path>
+                        <path d="M12.6772 32.8575L17.0694 34.9301L17.042 33.6399L17.3989 30.5653L12.6772 32.8575Z"
+                          fill="#D5BFB2"></path>
+                        <path d="M17.1518 25.3495L13.2262 24.1965L15.9988 22.92L17.1518 25.3495Z" fill="#233447"></path>
+                        <path d="M22.848 25.3495L24.001 22.92L26.801 24.1965L22.848 25.3495Z" fill="#233447"></path>
+                        <path d="M12.6773 32.8573L13.3635 27.2023L8.99876 27.3258L12.6773 32.8573Z" fill="#CC6228">
+                        </path>
+                        <path d="M26.6364 27.2023L27.3227 32.8573L31.0149 27.3258L26.6364 27.2023Z" fill="#CC6228">
+                        </path>
+                        <path
+                          d="M29.9581 20.9709L22.1207 21.3278L22.8482 25.3495L24.0011 22.92L26.8012 24.1965L29.9581 20.9709Z"
+                          fill="#CC6228"></path>
+                        <path
+                          d="M13.2263 24.1965L15.9989 22.92L17.1519 25.3495L17.8793 21.3278L10.0419 20.9709L13.2263 24.1965Z"
+                          fill="#CC6228"></path>
+                        <path d="M10.0419 20.9709L13.3361 27.3809L13.2263 24.1965L10.0419 20.9709Z" fill="#E27525">
+                        </path>
+                        <path d="M26.8011 24.1965L26.6638 27.3809L29.958 20.9709L26.8011 24.1965Z" fill="#E27525">
+                        </path>
+                        <path d="M17.8793 21.3278L17.1519 25.3494L18.0715 30.0985L18.2637 23.8396L17.8793 21.3278Z"
+                          fill="#E27525"></path>
+                        <path d="M22.1205 21.3278L21.7499 23.8258L21.9283 30.0985L22.848 25.3494L22.1205 21.3278Z"
+                          fill="#E27525"></path>
+                        <path
+                          d="M22.848 25.3496L21.9284 30.0987L22.601 30.5654L26.6638 27.381L26.8011 24.1967L22.848 25.3496Z"
+                          fill="#F5841F"></path>
+                        <path
+                          d="M13.2262 24.1967L13.336 27.381L17.3989 30.5654L18.0714 30.0987L17.1518 25.3496L13.2262 24.1967Z"
+                          fill="#F5841F"></path>
+                        <path
+                          d="M22.9303 34.93L22.9715 33.6398L22.6284 33.3378H17.3714L17.042 33.6398L17.0694 34.93L12.6772 32.8574L14.2145 34.1202L17.3302 36.2751H22.6696L25.7853 34.1202L27.3226 32.8574L22.9303 34.93Z"
+                          fill="#C0AC9D"></path>
+                        <path
+                          d="M22.601 30.5653L21.9284 30.0986H18.0715L17.3989 30.5653L17.0421 33.6399L17.3715 33.3379H22.6285L22.9716 33.6399L22.601 30.5653Z"
+                          fill="#161616"></path>
+                        <path
+                          d="M36.5875 14.3003L37.7542 8.61779L36.011 3.33337L22.6009 13.2846L27.7618 17.6493L35.0365 19.7768L36.6424 17.8964L35.9424 17.3886L37.0679 16.3728L36.2169 15.7003L37.3287 14.863L36.5875 14.3003Z"
+                          fill="#763E1A"></path>
+                        <path
+                          d="M2.24573 8.61779L3.42615 14.3003L2.67123 14.863L3.78302 15.7003L2.93202 16.3728L4.05753 17.3886L3.35752 17.8964L4.96343 19.7768L12.2518 17.6493L17.399 13.2846L4.00263 3.33337L2.24573 8.61779Z"
+                          fill="#763E1A"></path>
+                        <path
+                          d="M35.0365 19.777L27.7619 17.6495L29.958 20.9712L26.6638 27.3811L31.0149 27.3262H37.4797L35.0365 19.777Z"
+                          fill="#F5841F"></path>
+                        <path
+                          d="M12.2517 17.6495L4.96332 19.777L2.53386 27.3262H8.99869L13.336 27.3811L10.0419 20.9712L12.2517 17.6495Z"
+                          fill="#F5841F"></path>
+                        <path
+                          d="M22.1205 21.3276L22.6009 13.2843L24.701 7.56067H15.2988L17.3988 13.2843L17.8792 21.3276L18.0577 23.8531L18.0714 30.0984H21.9283L21.9421 23.8531L22.1205 21.3276Z"
+                          fill="#F5841F"></path>
+                      </svg>
+                      <div font-size="14px" color="text" class="sc-gtsrHT dUSdIO">Metamask</div>
+                    </button>
+                    <button id="btn-login-trustwallet" class="btn" width="100%" scale="md"><svg viewBox="0 0 40 40"
+                        width="40px" color="text" xmlns="http://www.w3.org/2000/svg" class="sc-bdnxRM dfRmJU">
+                        <path opacity="0.9"
+                          d="M19.9959 4.8377L20.7771 3.82105C20.5523 3.64825 20.2766 3.55457 19.9931 3.55457C19.7095 3.55457 19.4339 3.64825 19.209 3.82105L19.9959 4.8377ZM33.425 8.7837H34.7059C34.7081 8.61378 34.6767 8.44509 34.6134 8.28737C34.5502 8.12965 34.4563 7.98603 34.3372 7.8648C34.2181 7.74358 34.0762 7.64714 33.9196 7.58107C33.763 7.515 33.5949 7.4806 33.425 7.47985V8.7837ZM19.9959 36.2161L19.2837 37.2845C19.4936 37.425 19.7405 37.5 19.9931 37.5C20.2457 37.5 20.4925 37.425 20.7024 37.2845L19.9959 36.2161ZM6.57841 8.7837V7.49709C6.40847 7.49783 6.24036 7.53223 6.0838 7.5983C5.92723 7.66437 5.7853 7.76081 5.66621 7.88204C5.54712 8.00326 5.45322 8.14688 5.38995 8.3046C5.32667 8.46232 5.29526 8.63101 5.29754 8.80093L6.57841 8.7837ZM19.2148 5.84861C25.0275 10.3518 31.6846 10.0646 33.4307 10.0646V7.49709C31.6214 7.49709 25.8259 7.72684 20.7943 3.82105L19.2148 5.84861ZM32.1499 8.76073C32.0522 14.7113 31.7995 18.91 31.317 22.0174C30.8345 25.1248 30.1682 26.9399 29.2894 28.238C28.4106 29.5361 27.2848 30.3804 25.6364 31.3626C23.9879 32.3448 21.8799 33.4361 19.2837 35.1535L20.7312 37.2845C23.1895 35.6475 25.2343 34.6021 26.9747 33.5625C28.7284 32.6075 30.2502 31.2779 31.4319 29.6682C32.5806 27.9451 33.3675 25.6475 33.873 22.408C34.3785 19.1685 34.6369 14.809 34.7346 8.80093L32.1499 8.76073ZM20.7312 35.1535C18.1522 33.4304 16.05 32.362 14.413 31.3684C12.776 30.3747 11.6502 29.582 10.7656 28.238C9.8811 26.8939 9.16312 25.1076 8.66915 22.0174C8.17519 18.9273 7.95692 14.7113 7.85928 8.76073L5.29754 8.80093C5.39518 14.809 5.6594 19.18 6.15911 22.408C6.65882 25.636 7.42275 27.9336 8.59448 29.6682C9.77051 31.2788 11.2888 32.6088 13.0402 33.5625C14.7633 34.6021 16.8254 35.6475 19.2837 37.2845L20.7312 35.1535ZM6.57841 10.0646C8.30155 10.0646 14.9644 10.3518 20.7771 5.84861L19.209 3.82105C14.166 7.72684 8.37048 7.49709 6.57266 7.49709L6.57841 10.0646Z"
+                          fill="#3688EB"></path>
+                      </svg>
+                      <div font-size="14px" color="text" class="sc-gtsrHT dUSdIO">Trust Wallet</div>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer col d-flex justify-content-center">
+              <p class="text-md text-bolder">არ გაქვს კრიპტო საფულე?</p>
+              <a type="button" target="_blank" href="https://cryptolux.gitbook.io/untitled/rogor/rogor-davakavshiro-sapule-kriptolukstan" class="btn btn-info">ისწავლე როგორ დაუკავშირდე</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- საფულის დაკავშირების მოდალი -->
+
+
+      <footer class="footer pt-3  ">
+        <div class="container-fluid">
+          <div class="row align-items-center justify-content-lg-between">
+            <div class="col-lg-6 mb-lg-0 mb-4">
+              
+            </div>
+            <div class="col-lg-6">
+              <ul class="nav nav-footer justify-content-center justify-content-lg-end">
+                <li class="nav-item">
+                  <a target="_blank" href="https://t.me/cryptoluxge" class="nav-link text-muted">დახმარება</a>
+                </li>
+                <li class="nav-item">
+                  <a target="_blank" href="https://t.me/cryptoluxge" class="nav-link text-muted">კონტაქტი</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </main>
+  <!--   Core JS Files   -->
+  <script src="../js/core/popper.min.js"></script>
+  <script src="../js/core/bootstrap.min.js"></script>
+  <script src="../js/plugins/perfect-scrollbar.min.js"></script>
+  <script src="../js/plugins/smooth-scrollbar.min.js"></script>
+  <script>
+    var win = navigator.platform.indexOf('Win') > -1;
+    if (win && document.querySelector('#sidenav-scrollbar')) {
+      var options = {
+        damping: '0.5'
+      }
+      Scrollbar.init(document.querySelector('#sidenav-scrollbar'), options);
+    }
+  </script>
+  <!-- Github buttons -->
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
+  <!-- Control Center for Soft Dashboard: parallax effects, scripts for the example pages etc -->
+  <script src="../js/soft-ui-dashboard.min.js?v=1.0.3"></script>
+  <script src="index.js"></script>
+</body>
+
+</html>
