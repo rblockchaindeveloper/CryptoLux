@@ -269,7 +269,7 @@ document.getElementById('rarityTable').style.display = 'none';
 function getHoskyRarity() {
 	var hoskyID = document.getElementById('hoskyID').value;
   fetch("https://cnft.tools/project/hosky/" + hoskyID, {
-           method: 'GET',
+           method: 'POST',
            mode: 'cors',
            headers: {
              'Content-Type': 'application/json'
