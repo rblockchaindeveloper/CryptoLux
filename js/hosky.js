@@ -267,18 +267,14 @@ document.getElementById('noTokensAndNFTS').style.display = 'none';
 document.getElementById('rarityTable').style.display = 'none';
 
 function getHoskyRarity() {
-	var hoskyID = document.getElementById('hoskyID').value;
-  fetch("https://cnft.tools/project/hosky/" + hoskyID, {
-           method: 'POST',
-           mode: 'cors',
-           headers: {
-             'Content-Type': 'application/json'
-       })
+  var hoskyID = document.getElementById("hoskyID").value;
+  fetch("https://cnft.tools/project/hosky/" + hoskyID)
     .then(function (response) {
       if (!response.ok) {
         resetRarity();
-        document.getElementById('alerText').innerHTML = 'ამ ID-ით NFT ვერ მოიძებნა!';
-        document.getElementById('noTokensAndNFTS').style.display = 'block';
+        document.getElementById("alerText").innerHTML =
+          "ამ ID-ით NFT ვერ მოიძებნა!";
+        document.getElementById("noTokensAndNFTS").style.display = "block";
       }
       return response.json();
     })
@@ -286,31 +282,43 @@ function getHoskyRarity() {
       resetRarity();
       console.log(data);
 
-      if (data.error){
+      if (data.error) {
         resetRarity();
-        document.getElementById('alerText').innerHTML = 'ამ ID-ით NFT ვერ მოიძებნა!';
-        document.getElementById('noTokensAndNFTS').style.display = 'block';
-      }else{
-        document.getElementById('rarityTable').style.display = 'block';
+        document.getElementById("alerText").innerHTML =
+          "ამ ID-ით NFT ვერ მოიძებნა!";
+        document.getElementById("noTokensAndNFTS").style.display = "block";
+      } else {
+        document.getElementById("rarityTable").style.display = "block";
 
-        document.getElementById("hoskyNFT").src = `https://ipfs.io/ipfs/${data.iconurl}`;
-        document.getElementById('hoskyNFTname').innerHTML = `${data.name}`;
-        document.getElementById('hoskyRank').innerHTML = `რანკი: ${data.rarityRank} `;
-        document.getElementById('hoskyScore').innerHTML = `ქულა: ${data.rarityScore} `;
-        document.getElementById('background').innerHTML = `ფონი: ${data.background}`;
-        document.getElementById('fur').innerHTML = `ბეწვი: ${data.fur}`;
-        document.getElementById('eyes').innerHTML = `თვალები: ${data.eyes}`;
-        document.getElementById('ear').innerHTML = `ყურები: ${data.earDecoration}`;
-        document.getElementById('hat').innerHTML = `ქუდი: ${data.hat}`;
-        document.getElementById('neck').innerHTML = `კისერი: ${data.neck}`;
-        document.getElementById('mouth').innerHTML = `პირი: ${data.mouth}`;
-        document.getElementById('mouthDecoration').innerHTML = `პირის დეკორაცია: ${data.mouthDecoration}`;
-        document.getElementById('glasses').innerHTML = `სათვალე: ${data.glasses}`;
-        document.getElementById('frame').innerHTML = `ჩარჩო: ${data.frame}`;
+        document.getElementById(
+          "hoskyNFT"
+        ).src = `https://ipfs.io/ipfs/${data.iconurl}`;
+        document.getElementById("hoskyNFTname").innerHTML = `${data.name}`;
+        document.getElementById(
+          "hoskyRank"
+        ).innerHTML = `რანკი: ${data.rarityRank} `;
+        document.getElementById(
+          "hoskyScore"
+        ).innerHTML = `ქულა: ${data.rarityScore} `;
+        document.getElementById(
+          "background"
+        ).innerHTML = `ფონი: ${data.background}`;
+        document.getElementById("fur").innerHTML = `ბეწვი: ${data.fur}`;
+        document.getElementById("eyes").innerHTML = `თვალები: ${data.eyes}`;
+        document.getElementById(
+          "ear"
+        ).innerHTML = `ყურები: ${data.earDecoration}`;
+        document.getElementById("hat").innerHTML = `ქუდი: ${data.hat}`;
+        document.getElementById("neck").innerHTML = `კისერი: ${data.neck}`;
+        document.getElementById("mouth").innerHTML = `პირი: ${data.mouth}`;
+        document.getElementById(
+          "mouthDecoration"
+        ).innerHTML = `პირის დეკორაცია: ${data.mouthDecoration}`;
+        document.getElementById(
+          "glasses"
+        ).innerHTML = `სათვალე: ${data.glasses}`;
+        document.getElementById("frame").innerHTML = `ჩარჩო: ${data.frame}`;
       }
-
-      
-
     });
 }
 
